@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" app:cardBackgroundColor="#fff" app:cardCornerRadius="5dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.6">
+                <p009de.hdodenhof.circleimageview.CircleImageView android:id="@+id/img_user" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/user"/>
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1.7">
+                <TextView android:textStyle="bold" android:id="@+id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lorem ipsum" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                <TextView android:id="@+id/txt_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9988776655" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.7">
+                <Button android:textColor="#fff" android:id="@+id/btn_complete" android:background="@drawable/accept" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginRight="5dp" android:text="Complete" android:textAllCaps="false"/>
+                <Button android:textColor="#fff" android:id="@+id/btn_reject" android:background="@drawable/accept" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="10dp" android:layout_marginRight="5dp" android:text="Reject" android:layout_below="@+id/btn_complete" android:textAllCaps="false"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="#000" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="2">
+            <TextView android:gravity="center" android:id="@+id/txt_datetime" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Start Date :- 4 april 2018" android:layout_weight="1"/>
+            <TextView android:gravity="center" android:id="@+id/txt_enddatetime" android:layout_width="0dp" android:layout_height="wrap_content" android:text="End Date :- 4 april 2018" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:background="#000" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="2">
+            <TextView android:gravity="center" android:id="@+id/txt_stime" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Start Time :- 4:40PM" android:layout_weight="1"/>
+            <TextView android:gravity="center" android:id="@+id/txt_etime" android:layout_width="0dp" android:layout_height="wrap_content" android:text="End Time :- 4:40PM" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:background="#000" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:weightSum="2">
+            <TextView android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Total Amount" android:layout_weight="0.7"/>
+            <TextView android:id="@+id/txt_ttl_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:text="0.0" android:layout_weight="1.3"/>
+        </LinearLayout>
+        <View android:background="#000" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:weightSum="2">
+            <TextView android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Address line 1 : " android:layout_weight="0.7"/>
+            <TextView android:id="@+id/txt_address" android:layout_width="0dp" android:layout_height="wrap_content" android:text="bhawarkua indore m.p." android:layout_weight="1.3"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:weightSum="2">
+            <TextView android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Address line 2 : " android:layout_weight="0.7"/>
+            <TextView android:id="@+id/txt_addresstwo" android:layout_width="0dp" android:layout_height="wrap_content" android:text="bhawarkua indore m.p." android:layout_weight="1.3"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

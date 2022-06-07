@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" app:cardBackgroundColor="#fff" app:cardCornerRadius="8dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/my_app_blue" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="CareGiver or Nursing" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <p009de.hdodenhof.circleimageview.CircleImageView android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/user_one"/>
+        </RelativeLayout>
+        <TextView android:textStyle="bold" android:gravity="center" android:id="@+id/txt_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Lorem ipsum" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+        <TextView android:gravity="center" android:id="@+id/txt_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="9988776655" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <com.willy.ratingbar.ScaleRatingBar android:id="@+id/simpleRatingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_centerHorizontal="true" app:srb_clearRatingEnabled="true" app:srb_clickable="true" app:srb_drawableEmpty="@drawable/star_off" app:srb_drawableFilled="@drawable/star" app:srb_isIndicator="false" app:srb_minimumStars="1" app:srb_numStars="5" app:srb_rating="2" app:srb_scrollable="true" app:srb_starHeight="40dp" app:srb_starPadding="10dp" app:srb_starWidth="40dp" app:srb_stepSize="0.5"/>
+        </RelativeLayout>
+        <EditText android:id="@+id/edt_comment" android:background="@drawable/commen" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginLeft="40dp" android:layout_marginTop="10dp" android:layout_marginRight="40dp" android:hint="Write Comment...."/>
+        <Button android:textColor="#fff" android:id="@+id/btn_submit" android:background="@drawable/field_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" android:text="Submit" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

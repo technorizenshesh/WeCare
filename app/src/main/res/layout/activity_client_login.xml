@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/img_logo" android:background="@drawable/logo" android:layout_width="150dp" android:layout_height="150dp" android:layout_marginTop="10dp" android:layout_centerHorizontal="true"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lay_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="40dp" android:layout_marginRight="20dp" android:layout_below="@+id/img_logo">
+                <TextView android:textColor="@color/my_app_blue" android:id="@+id/txt_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Sign In as DoCare Client Service" android:layout_below="@+id/rlheader" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                <EditText android:id="@+id/ed_email" android:background="@drawable/field" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="7dp" android:hint="Email Address/Username" android:singleLine="true"/>
+                <EditText android:id="@+id/edt_pass" android:background="@drawable/field" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="10dp" android:hint="Password" android:singleLine="true" android:inputType="textPassword"/>
+                <Button android:textColor="#ffffff" android:id="@+id/btn_login" android:background="@drawable/field_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="LogIn" android:textAllCaps="false" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

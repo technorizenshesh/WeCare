@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" app:cardBackgroundColor="#fff" app:cardCornerRadius="5dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+        <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.8">
+            <p009de.hdodenhof.circleimageview.CircleImageView android:id="@+id/img_user" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/user"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.5">
+            <TextView android:textStyle="bold" android:id="@+id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lorem ipsum" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+            <TextView android:id="@+id/txt_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9988776655" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+            <TextView android:id="@+id/txt_datetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4 april 2018 , 4:40PM" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.7">
+            <Button android:textColor="#fff" android:id="@+id/btn_extend" android:background="@drawable/btn_continue" android:layout_width="match_parent" android:layout_height="30dp" android:text="Extend" android:textAllCaps="false"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

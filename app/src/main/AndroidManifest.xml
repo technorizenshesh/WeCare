@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tech.docarelat">
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.myapp.mobile.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"
+        />-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/new_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/new_icon"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.tech.docarelat.Activity.Main.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.tech.docarelat.Service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.tech.docarelat.Service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.tech.docarelat.Service.BroadcastNotiReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.tech.docarelat.Activity.Main.LandingActivity" />
+        <activity android:name="com.tech.docarelat.Activity.ClientService.ClientRegistrationActivity" />
+        <activity android:name="com.tech.docarelat.Activity.CareGiver.CareGiverRegistrationActivity" />
+        <activity android:name="com.tech.docarelat.Activity.ClientService.PaymentInfoActivity" />
+        <activity android:name="com.tech.docarelat.Activity.ClientService.ClientPersonalInfoActivity" />
+        <activity android:name="com.tech.docarelat.Activity.ClientService.ClientHomeActivity" />
+        <activity android:name="com.tech.docarelat.Activity.CareGiver.CreateGiverDetailActivity" />
+        <activity android:name="com.tech.docarelat.Activity.CareGiver.CareGiverBankInfoActivity" />
+        <activity android:name="com.tech.docarelat.Activity.CareGiver.GiverLoginActivity" />
+        <activity android:name="com.tech.docarelat.Activity.ClientService.ClientLoginActivity" />
+        <activity android:name="com.tech.docarelat.Activity.Main.MainActivity" />
+        <activity android:name="com.tech.docarelat.Activity.CareGiver.GiverHomeActivity" />
+        <activity android:name="com.tech.docarelat.Activity.ClientService.ScheduleCareGiverActivity" />
+        <activity android:name="com.tech.docarelat.Activity.ClientService.SeeScheduleListActivity" />
+        <activity android:name="com.tech.docarelat.Activity.ClientService.ExtenTimeActivity" />
+        <activity android:name="com.tech.docarelat.Activity.ClientService.ProfileActivity" />
+        <activity android:name="com.tech.docarelat.Activity.ClientService.RateActivity" />
+        <activity android:name="com.tech.docarelat.Activity.ClientService.ScheduleResponseActivity" />
+        <activity android:name="com.tech.docarelat.Activity.Main.GetHelpActivity" />
+        <activity android:name="com.tech.docarelat.Activity.Main.TermsAndConditionActivity" />
+        <activity android:name="com.tech.docarelat.Activity.CareGiver.DeligetsNearYouActivity" />
+        <activity android:name="com.tech.docarelat.Activity.CareGiver.ExistingDelegationsActivity" />
+        <activity android:name="com.tech.docarelat.Activity.Main.WebViewActivity"></activity>
+    </application>
+
+</manifest>

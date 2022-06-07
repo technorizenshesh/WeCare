@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlheader" android:visibility="visible" android:layout_width="match_parent" android:layout_height="50dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="5dp" android:src="@drawable/wecare" android:layout_toRightOf="@+id/imgLeftMenu" android:layout_centerVertical="true"/>
+                <ImageButton android:id="@+id/imgLeftMenu" android:background="@drawable/back" android:layout_width="40dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:textColor="@color/my_app_blue" android:gravity="center" android:id="@+id/txt_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Schedule a Caregiver" android:layout_below="@+id/rlheader" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+            <View android:id="@+id/view_one" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp" android:layout_below="@+id/txt_one"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/view_one">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:weightSum="3">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/lay_onetime" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="One Time" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                        <View android:id="@+id/view_onetime" android:background="#049bec" android:layout_width="match_parent" android:layout_height="3dp" android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/lay_daily" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Daily" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                        <View android:id="@+id/view_daily" android:background="#000" android:layout_width="match_parent" android:layout_height="3dp" android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/lay_weekly" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Weekly" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                        <View android:id="@+id/view_weekly" android:background="#000" android:layout_width="match_parent" android:layout_height="3dp" android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:weightSum="2">
+                    <RelativeLayout android:background="@drawable/field" android:layout_width="0dp" android:layout_height="40dp" android:layout_margin="8dp" android:layout_weight="1">
+                        <TextView android:textColor="#434141" android:id="@+id/txt_startdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Start Date" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                        <ImageView android:id="@+id/img_startdate" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="8dp" android:src="@drawable/date" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:background="@drawable/field" android:layout_width="0dp" android:layout_height="40dp" android:layout_margin="8dp" android:layout_weight="1">
+                        <TextView android:textColor="#434141" android:id="@+id/txt_enddate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="End Date" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                        <ImageView android:id="@+id/img_enddate" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="8dp" android:src="@drawable/date" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                    <RelativeLayout android:background="@drawable/field" android:layout_width="0dp" android:layout_height="40dp" android:layout_margin="8dp" android:layout_weight="1">
+                        <TextView android:textColor="#434141" android:id="@+id/txt_starttime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Start Time" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                        <ImageView android:id="@+id/img_starttime" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="8dp" android:src="@drawable/time" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:background="@drawable/field" android:layout_width="0dp" android:layout_height="40dp" android:layout_margin="8dp" android:layout_weight="1">
+                        <TextView android:textColor="#434141" android:id="@+id/txt_endtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="End Time" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                        <ImageView android:id="@+id/img_endtime" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="8dp" android:src="@drawable/time" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:background="@drawable/field" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="10dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Type Of Service" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                </RelativeLayout>
+                <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@+id/type_radiogroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:weightSum="2" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                    <RadioButton android:id="@+id/radioButton1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="Nursing Care" android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/radioButton2" android:layout_width="0dp" android:layout_height="wrap_content" android:checked="true" android:text="Support Care" android:layout_weight="1"/>
+                </RadioGroup>
+                <RelativeLayout android:background="@drawable/field" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Alternative Address to Receive Care" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                </RelativeLayout> //--------------------------------------------------------------------- 
+                <EditText android:id="@+id/ed_addressone" android:background="@drawable/field" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginTop="7dp" android:layout_marginRight="20dp" android:hint="Address line 1" android:singleLine="true"/> //--------------------------------------------------------------------- 
+                <EditText android:id="@+id/ed_addresstwo" android:background="@drawable/field" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginTop="7dp" android:layout_marginRight="20dp" android:hint="Address line 2" android:singleLine="true"/> //---------------------------------------------------------------------\10\10                //--------------------------------------------------------------------- 
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="7dp" android:layout_marginRight="20dp" android:weightSum="2">
+                    <AutoCompleteTextView android:id="@+id/edt_city" android:background="@drawable/field" android:paddingLeft="20dp" android:nextFocusDown="@+id/edt_state" android:layout_width="0dp" android:layout_height="50dp" android:layout_marginRight="5dp" android:hint="City" android:singleLine="true" android:layout_weight="1" android:imeOptions="actionNext"/>
+                    <AutoCompleteTextView android:id="@+id/edt_state" android:background="@drawable/field" android:paddingLeft="20dp" android:nextFocusDown="@+id/ed_zip" android:layout_width="0dp" android:layout_height="50dp" android:layout_marginRight="5dp" android:hint="State" android:singleLine="true" android:layout_weight="1" android:imeOptions="actionNext"/>
+                </LinearLayout> //--------------------------------------------------------------------- 
+                <EditText android:id="@+id/ed_zip" android:background="@drawable/field" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginTop="7dp" android:layout_marginRight="20dp" android:hint="Zip Code" android:singleLine="true"/>
+                <RelativeLayout android:background="@drawable/field" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="10dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Requesting Care" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                </RelativeLayout>
+                <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@+id/gender_radiogroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:weightSum="3" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                    <RadioButton android:id="@+id/radioButton12" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="Male" android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/radioButton21" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Female" android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/radioButton213" android:layout_width="0dp" android:layout_height="wrap_content" android:checked="true" android:text="Both" android:layout_weight="1"/>
+                </RadioGroup>
+                <RelativeLayout android:background="@drawable/field" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true">
+                    <TextView android:textColor="@color/my_app_blue" android:id="@+id/txt_continue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="Continue" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                    <TextView android:textColor="@color/my_app_blue" android:id="@+id/txt_gethelp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="GET HELP" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

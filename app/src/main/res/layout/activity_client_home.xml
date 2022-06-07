@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlheader" android:visibility="visible" android:layout_width="match_parent" android:layout_height="50dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="10dp" android:src="@drawable/wecare" android:layout_centerVertical="true"/>
+                <ImageButton android:id="@+id/imgLeftMenu" android:background="@drawable/back" android:layout_width="40dp" android:layout_height="30dp" android:layout_marginRight="30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:textColor="@color/my_app_blue" android:gravity="center" android:id="@+id/txt_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DoCare Client Home" android:layout_below="@+id/rlheader" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+            <View android:id="@+id/view_one" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp" android:layout_below="@+id/txt_one"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/view_one">
+                <RelativeLayout android:id="@+id/lay_schedule" android:background="@drawable/field" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textColor="#434141" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Schedule a Caregiver" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="8dp" android:src="@drawable/shedule" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/lay_see" android:background="@drawable/field" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textColor="#434141" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="See Scheduled Time and Response" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="8dp" android:src="@drawable/response" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/lay_extend" android:background="@drawable/field" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textColor="#434141" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Extend the stay of the current Caregiver" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="8dp" android:src="@drawable/extend" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/lay_profile" android:background="@drawable/field" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textColor="#434141" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Make Changes to Your Profile" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="8dp" android:src="@drawable/change_profile" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/lay_rate" android:background="@drawable/field" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textColor="#434141" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Rate the Last Caregiver" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="8dp" android:src="@drawable/rate_giver" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/lay_logout" android:background="@drawable/field" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textColor="#434141" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Log out from App" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="8dp" android:src="@drawable/log_out" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/lay_close" android:background="@drawable/field" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textColor="#434141" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Close the App" android:layout_centerVertical="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="8dp" android:src="@drawable/close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

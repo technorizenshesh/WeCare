@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/country_code_holder_rly" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center" android:id="@+id/click_consumer_rly" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/flag_holder_lly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/google_1x" android:layout_centerVertical="true">
+            <android.support.v7.widget.AppCompatImageView android:id="@+id/flag_imv" android:layout_width="wrap_content" android:layout_height="18dp" android:src="@drawable/flag_indonesia" android:adjustViewBounds="true"/>
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatTextView android:textSize="18sp" android:textColor="@android:color/black" android:id="@+id/selected_country_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(ID) +62" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@+id/flag_holder_lly" android:layout_centerVertical="true"/>
+        <android.support.v7.widget.AppCompatImageView android:id="@+id/arrow_imv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_drop_down_black_24dp" android:adjustViewBounds="true" android:tint="@android:color/black" android:layout_toRightOf="@+id/selected_country_tv" android:layout_centerVertical="true" android:alpha="0.6"/>
+    </RelativeLayout>
+</RelativeLayout>

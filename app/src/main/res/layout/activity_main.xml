@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/img_logo" android:background="@drawable/logo" android:layout_width="150dp" android:layout_height="150dp" android:layout_marginTop="30dp" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/lay_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="50dp" android:layout_marginRight="20dp" android:layout_below="@+id/img_logo">
+        <Button android:textColor="#ffffff" android:id="@+id/btn_login" android:background="@drawable/field_bg" android:layout_width="match_parent" android:layout_height="50dp" android:text="Sign In" android:textAllCaps="false" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+        <Button android:textColor="#ffffff" android:id="@+id/btn_signup" android:background="@drawable/field_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="20dp" android:text="Sign Up" android:textAllCaps="false" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+    </LinearLayout>
+    <View android:background="#34a3df" android:layout_width="match_parent" android:layout_height="3dp" android:layout_marginLeft="60dp" android:layout_marginTop="100dp" android:layout_marginRight="60dp" android:layout_below="@+id/lay_one"/>
+    <TextView android:textStyle="bold" android:textColor="#34a3df" android:gravity="center" android:id="@+id/txt_gethelp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="GET HELP" android:layout_alignParentBottom="true" style="@style/Base.TextAppearance.AppCompat.Medium"/>
+</RelativeLayout>
